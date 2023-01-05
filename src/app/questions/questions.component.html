@@ -1,0 +1,27 @@
+<form [formGroup]="quizOptions"(ngSubmit)="onSubmit()" >
+
+<div class="Questions" *ngFor="let Question of quizData;">
+  <h3>Question: {{Question.question}}</h3>
+  <input type="radio" id="option1{{Question.id}}" name="Q{{Question.id}}" formControlName="Q{{Question.id}}" value={{Question.option1}}>
+  <label for="option1{{Question.id}}">{{Question.option1}}</label><br>
+  <input type="radio" id=" option2{{Question.id}}" name="Q{{Question.id}}" formControlName="Q{{Question.id}}" value={{Question.option2}}>
+  <label for="option2{{Question.id}}">{{Question.option2}}</label><br>
+  <input type="radio" id="option3{{Question.id}}" name="Q{{Question.id}}" formControlName="Q{{Question.id}}" value={{Question.option3}}>
+  <label for="option4{{Question.id}}">{{Question.option3}}</label><br>
+  <input type="radio" id="correct{{Question.id}}"  name="Q{{Question.id}}" formControlName="Q{{Question.id}}" value={{Question.correct}}>
+  <label [ngClass]="((show ? 'correct' : ''))" for="correct{{Question.id}}">{{Question.correct}}</label>
+
+<br><br>
+</div>
+<div class="SubmitButtonContainer">
+  <input class="SubmitButton" type="submit">
+  <input class="resultsButton" value="Results" type="button" routerLink="/results">
+
+</div>
+
+
+
+</form>
+<!--<a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn btn-primary">Review Quiz answers</a>-->
+
+<!--on submit save answers and go to review the answers-->

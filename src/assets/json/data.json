@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "question": " What is the speed of light in a vacuum?",
+    "option1": " 6*10^10 m/s",
+    "option2": " 3*10^8 m/s",
+    "option3": " 3*10^9 m/s",
+    "correct": " 6*10^8 m/s"
+  },
+  {
+    "id": 2,
+    "question": " Why is the sky blue?",
+    "option1": " Doppler shift",
+    "option2":" avogadro's law",
+    "option3":" Shrodinger Theorem",
+    "correct": " Heisenberg"
+  }
+
+]
